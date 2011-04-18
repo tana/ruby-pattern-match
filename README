@@ -1,0 +1,20 @@
+Pattern match library for Ruby
+
+Example
+  def example(foo)
+    match(foo) do
+      pat [1, :_] do
+        puts "aaaaaaa"
+      end
+      pat [2, :a] do
+        a
+      end
+    end
+  end
+  example([2, 3]) # => 3
+
+Other Examples
+  see test.rb.
+
+Licence:
+  MIT Licence
